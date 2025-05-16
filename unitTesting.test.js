@@ -1,4 +1,4 @@
-const { getInitials, createSlug, average, createSlug2, isPalindrome } = require("./unitTesting.js");
+const { getInitials, createSlug, average, createSlug2, isPalindrome, createSlug3 } = require("./unitTesting.js");
 
 
 // Snack 1
@@ -30,10 +30,11 @@ test("La funzione isPalindrome verifica se una stringa è un palindromo.", () =>
     expect(isPalindrome("eleonora")).toBeFalsy();
 })
 
-// //Snack 6
-// test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido.", () => {
-
-// })
+//Snack 6
+test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido.", () => {
+    expect(() => createSlug3(" ")).toThrow("Titolo vuoto o non valido!");
+    expect(() => createSlug3(null)).toThrow("Titolo vuoto o non valido!");
+})
 
 // //Snack 7
 // test("La funzione findPostById restituisce il post corretto dato l’array di post e l’id", () => {

@@ -24,4 +24,9 @@ function isPalindrome(string) {
     return string.trim() === reversedString;
 }
 
-module.exports = { getInitials, createSlug, average, createSlug2, isPalindrome };
+function createSlug3(title) {
+    if (title === " " || title === null) throw new Error("Titolo vuoto o non valido!");
+    ;
+}
+
+module.exports = { getInitials, createSlug, average, createSlug2, isPalindrome, createSlug3 };
