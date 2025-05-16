@@ -3,5 +3,9 @@ function getInitials(fullName) {
     return name.charAt(0) + surname.charAt(0);
 }
 
+function createSlug(string) {
+    return string.toLowerCase();
+}
 
-module.exports = { getInitials };
+
+module.exports = { getInitials, createSlug };

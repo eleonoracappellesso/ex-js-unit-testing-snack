@@ -1,13 +1,17 @@
-const { getInitials } = require("./unitTesting.js");
+const { getInitials, createSlug } = require("./unitTesting.js");
+
+
 // Snack 1
 test("La funzione getInitials restituisce le iniziali di un nome completo.", () => {
     expect(getInitials("Mario Rossi")).toBe("MR");
 });
 
-// //Snack 2
-// test("La funzione createSlug restituisce una stringa in lowercase.", () => {
-
-// })
+//Snack 2
+test("La funzione createSlug restituisce una stringa in lowercase.", () => {
+    expect(createSlug("CIAO")).toBe("ciao");
+    expect(createSlug("arRIVedErcI")).toBe("arrivederci");
+    expect(createSlug("Buonanotte")).toBe("buonanotte");
+});
 
 // //Snack 3
 // test("La funzione average calcola la media aritmetica di un array di numeri.", () => {
