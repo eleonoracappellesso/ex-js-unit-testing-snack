@@ -7,5 +7,13 @@ function createSlug(string) {
     return string.toLowerCase();
 }
 
+function average(arrNumbers) {
+    let sum = 0;
+    arrNumbers.forEach(num => {
+        sum += num;
+    });
+    return sum / arrNumbers.length;
+}
 
-module.exports = { getInitials, createSlug };
+
+module.exports = { getInitials, createSlug, average };
