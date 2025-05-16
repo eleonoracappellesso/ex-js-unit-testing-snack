@@ -1,4 +1,4 @@
-const { getInitials, createSlug, average, createSlug2 } = require("./unitTesting.js");
+const { getInitials, createSlug, average, createSlug2, isPalindrome } = require("./unitTesting.js");
 
 
 // Snack 1
@@ -24,10 +24,11 @@ test("La funzione createSlug sostituisce gli spazi con -.", () => {
     expect(createSlug2("Questa è una stringa esempio")).toBe("Questa-è-una-stringa-esempio");
 })
 
-// //Snack 5
-// test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
-
-// })
+//Snack 5
+test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
+    expect(isPalindrome("otto")).toBeTruthy();
+    expect(isPalindrome("eleonora")).toBeFalsy();
+})
 
 // //Snack 6
 // test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido.", () => {

@@ -19,4 +19,9 @@ function createSlug2(string) {
     return string.replace(/\s/g, "-");
 }
 
-module.exports = { getInitials, createSlug, average, createSlug2 };
+function isPalindrome(string) {
+    const reversedString = string.trim().split("").reverse().join("");
+    return string.trim() === reversedString;
+}
+
+module.exports = { getInitials, createSlug, average, createSlug2, isPalindrome };
