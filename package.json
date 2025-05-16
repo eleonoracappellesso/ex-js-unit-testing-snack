@@ -1,0 +1,25 @@
+{
+  "name": "ex-js-unit-testing-snack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eleonoracappellesso/ex-js-unit-testing-snack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eleonoracappellesso/ex-js-unit-testing-snack/issues"
+  },
+  "homepage": "https://github.com/eleonoracappellesso/ex-js-unit-testing-snack#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
