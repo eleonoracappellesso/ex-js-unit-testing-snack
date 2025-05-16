@@ -15,5 +15,8 @@ function average(arrNumbers) {
     return sum / arrNumbers.length;
 }
 
+function createSlug2(string) {
+    return string.replace(/\s/g, "-");
+}
 
-module.exports = { getInitials, createSlug, average };
+module.exports = { getInitials, createSlug, average, createSlug2 };

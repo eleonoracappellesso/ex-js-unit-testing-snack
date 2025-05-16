@@ -1,4 +1,4 @@
-const { getInitials, createSlug, average } = require("./unitTesting.js");
+const { getInitials, createSlug, average, createSlug2 } = require("./unitTesting.js");
 
 
 // Snack 1
@@ -19,10 +19,10 @@ test("La funzione average calcola la media aritmetica di un array di numeri.", (
     expect(average([3, 6, 9, 12])).toBe(7.5);
 })
 
-// //Snack 4
-// test("La funzione createSlug sostituisce gli spazi con -.", () => {
-
-// })
+//Snack 4
+test("La funzione createSlug sostituisce gli spazi con -.", () => {
+    expect(createSlug2("Questa è una stringa esempio")).toBe("Questa-è-una-stringa-esempio");
+})
 
 // //Snack 5
 // test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
